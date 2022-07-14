@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Lemon&family=Poppins:wght@600&display=swap");
+body {
+  background-color: #020202;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins' sans-serif;
+}
+
+.menu {
+  position: fixed;
+  float: right;
+  right: 0;
+  margin-right: 3em;
+  top: 2em;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #393E45;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 5em;
+  padding-left: 1.5em;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #ECDBBA;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2.5em;
+}
+
+nav ul a:hover {
+  color: #C84B31;
+}
+
+nav .close {
+  float: right;
+  right: 0;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 1.5em;
+  margin-right: 3em;
+}
+
+.photo {
+  position: absolute;
+  width: 300px;
+  height: 483.33px;
+  top: 1em;
+  z-index: -1;
+}
+
+.name {
+  position: absolute;
+  top: 6em;
+  color: #C84B31;
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1em;
+  text-align: left;
+}
+
+.name span {
+  padding-left: 5rem;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.sub-heading {
+  color: #2D5492;
+  font-family: 'Cookie';
+  font-style: normal;
+  font-size: 5rem;
+  position: absolute;
+  top: 0em;
+  left: .5em;
+}
+
+p {
+  width: auto;
+  height: auto;
+  color: #ECDBBA;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: .9rem;
+  position: absolute;
+  top: 10em;
+  padding-left: 2em;
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    background-color: #020202;
+    margin: 1.5em, 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Poppins' sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+  .menu {
+    display: none;
+  }
+  .photo {
+    position: absolute;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    left: 7em;
+    width: 350px;
+    height: 563px;
+  }
+  p {
+    color: #ECDBBA;
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+  }
+  nav {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    position: absolute;
+    margin-right: 5em;
+    margin-top: 3em;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  nav ul a {
+    padding-left: 2em;
+    margin-left: 0em;
+    font-size: 1.1rem;
+  }
+  .name {
+    font-size: 10rem;
+    top: .3em;
+    right: 1em;
+  }
+}
+
+.transition-fade {
+  opacity: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+html.is-animating.transition-fade {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+html.is-leaving.transition-fade {
+  opacity: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=main.css.map */

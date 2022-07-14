@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="node_module/swup/dist/swup.min.js"></script>
+    
+</head>
+<body>
+    <img src="assets/menu.png" alt="hamburger menu" class="menu">
+    <nav>
+        <svg class="close" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.62503 1.62497C2.09385 1.15629 2.72962 0.893005 3.39253 0.893005C4.05544 0.893005 4.69121 1.15629 5.16003 1.62497L14 10.465L22.84 1.62497C23.3115 1.16958 23.943 0.91759 24.5985 0.923286C25.254 0.928982 25.8811 1.1919 26.3446 1.65543C26.8081 2.11895 27.071 2.74598 27.0767 3.40147C27.0824 4.05696 26.8304 4.68847 26.375 5.15997L17.535 14L26.375 22.84C26.8304 23.3115 27.0824 23.943 27.0767 24.5985C27.071 25.254 26.8081 25.881 26.3446 26.3445C25.8811 26.808 25.254 27.071 24.5985 27.0767C23.943 27.0824 23.3115 26.8304 22.84 26.375L14 17.535L5.16003 26.375C4.68853 26.8304 4.05702 27.0824 3.40153 27.0767C2.74604 27.071 2.11901 26.808 1.65549 26.3445C1.19197 25.881 0.929043 25.254 0.923347 24.5985C0.917651 23.943 1.16964 23.3115 1.62503 22.84L10.465 14L1.62503 5.15997C1.15635 4.69115 0.893066 4.05538 0.893066 3.39247C0.893066 2.72956 1.15635 2.09379 1.62503 1.62497V1.62497Z" fill="#ECDBBA"/>
+            </svg>
+            
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+
+        <h1 class="sub-heading">About</h1>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque, sapiente consequuntur impedit illo totam quo voluptatum libero accusantium,
+             culpa facilis beatae est quibusdam repellat id quia ratione pariatur, nemo atque.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Neque, sapiente consequuntur impedit illo totam quo voluptatum libero accusantium,
+            culpa facilis beatae est quibusdam repellat id quia ratione pariatur, nemo atque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque, sapiente consequuntur impedit illo totam quo voluptatum libero accusantium,
+             culpa facilis beatae est quibusdam repellat id quia ratione pariatur, nemo atque.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Neque, sapiente consequuntur impedit illo totam quo voluptatum libero accusantium,
+            culpa facilis beatae est quibusdam repellat id quia ratione pariatur, nemo atque.</p>
+
+
+    <script>
+        const menu=document.querySelector('.menu');
+        const close=document.querySelector('.close');
+        const nav=document.querySelector('nav');
+
+        menu.addEventListener('click',function(){
+            nav.classList.add('open-nav');
+        });
+        close.addEventListener('click',function(){
+            nav.classList.remove('open-nav');
+        });
+    </script>
+</body>
+</html>
